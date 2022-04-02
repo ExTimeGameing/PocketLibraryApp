@@ -2,50 +2,47 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/registrate_"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clipToOutline="true"
-    tools:context=".SignUp"
-    tools:targetApi="s">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
     <!-- Вход -->
     <!-- Имя пользователя -->
     <TextView
-        android:id="@+id/text_sign"
+        android:id="@+id/text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/rectangle_1"
+        android:layout_above="@id/rectangle_6"
         android:layout_centerInParent="true"
-        android:text="Регистрация"
+        android:text="Вход"
         android:textSize="36dp"
         android:typeface="sans"
         android:textStyle="bold"
         android:translationY="-15dp" />
 
     <Button
-        android:id="@+id/rectangle_4"
+        android:id="@+id/rectangle_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/ellipse_2"
-        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/ellipse_8"
+        android:layout_alignParentLeft="true"
         android:background="@drawable/rectangle_2"
         android:elevation="4dp"
-        android:text="@string/log_in_text"
+        android:text="Регистрация"
         android:textSize="15sp"
         android:typeface="sans"
         tools:ignore="MissingConstraints" />
 
     <!-- Почта -->
     <Button
-        android:id="@+id/rectangle_1"
+        android:id="@+id/rectangle_6"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/rectangle_2"
+        android:layout_above="@id/rectangle_7"
         android:layout_marginBottom="-1dp"
         android:background="@drawable/rectangle_1"
+        android:clickable="false"
         android:elevation="4dp"
         android:hint="Имя пользователя"
-        android:clickable="false"
         android:textAlignment="textStart"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,25 +50,8 @@
         tools:layout_editor_absoluteX="-13dp"
         tools:layout_editor_absoluteY="244dp" />
 
-    <!-- Пароль -->
     <Button
-        android:id="@+id/rectangle_3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rectangle_2"
-        android:layout_alignParentLeft="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="-1dp"
-        android:clickable="false"
-        android:background="@drawable/rectangle_1"
-        android:elevation="4dp"
-        android:hint="Почта"
-        android:textAlignment="textStart"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/rectangle_2"
+        android:id="@+id/rectangle_7"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -83,23 +63,31 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-14dp"
         tools:layout_editor_absoluteY="294dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/rectangle_7"
+        android:translationX="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rectangle_7"
+        android:hint = "Забыли пароль?"
+        />
     <!-- Шар снизу сзади     -->
     <View
-        android:id="@+id/ellipse_4"
+        android:id="@+id/ellipse_6"
         android:layout_width="288dp"
         android:layout_height="288dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/circle2"
+        android:background="@drawable/circle5"
         android:translationX="200dp"
         android:translationY="120dp"
         tools:ignore="MissingConstraints" />
     <!-- Шар сверху сзади    -->
     <View
-        android:id="@+id/ellipse_3"
+        android:id="@+id/ellipse_7"
         android:layout_width="288dp"
         android:layout_height="288dp"
-        android:background="@drawable/circle2"
+        android:background="@drawable/circle5"
         android:translationX="-150dp"
         android:translationY="-150dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -107,47 +95,42 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-180dp"
         tools:layout_editor_absoluteY="-100dp" />
-    <!-- Шар снизу спереди   -->
-    <!-- Шар сверху спереди  -->
-    <!-- Шарик готово -->
 
     <View
-        android:id="@+id/ellipse_1"
+        android:id="@+id/ellipse_8"
         android:layout_width="288dp"
         android:layout_height="288dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/circle"
+        android:background="@drawable/circle4"
         android:translationX="140dp"
         android:translationY="190dp"
         tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/ellipse_2"
+        android:id="@+id/ellipse_9"
         android:layout_width="288dp"
         android:layout_height="288dp"
-        android:background="@drawable/circle"
+        android:background="@drawable/circle4"
         android:translationX="-20dp"
         android:translationY="-200dp"
-        app:layout_anchor="@+id/ellipse_4"
         app:layout_anchorGravity="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/ellipse_5"
+        android:id="@+id/ellipse_10"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_below="@id/rectangle_1"
-        android:layout_alignRight="@id/rectangle_3"
+        android:layout_above="@id/rectangle_7"
+        android:layout_alignRight="@id/rectangle_6"
         android:layout_marginTop="-9dp"
         android:background="@drawable/circle3"
         android:elevation="10dp"
+        android:translationY="30dp"
         android:translationX="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
-
-
 </RelativeLayout>

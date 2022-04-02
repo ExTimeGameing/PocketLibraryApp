@@ -8,6 +8,8 @@
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/circle.xml" value="0.3405" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/circle2.xml" value="0.3405" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/circle3.xml" value="0.3405" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/circle4.xml" value="0.285" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/circle5.xml" value="0.285" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/education_o.xml" value="0.2235" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/ellipse_3.xml" value="0.3405" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2235" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/drawable/vector_2.xml" value="0.2235" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout-v21/activity_sign_up.xml" value="0.11796875" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout-v31/activity_sign_up.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_log_in.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_login.xml" value="0.29528985507246375" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_server_connection.xml" value="0.21946902654867256" />
