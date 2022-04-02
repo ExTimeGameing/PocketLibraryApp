@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketLibrary">
         <activity
-            android:name=".Instruction"
+            android:name=".ForgotPassword"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,16 +19,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LogIn"
+            android:name=".Instruction"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".LogIn"
+            android:exported="true"></activity>
+        <activity
             android:name=".SignUp"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ServerConnection"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
