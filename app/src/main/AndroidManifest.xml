@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketLibrary">
         <activity
-            android:name=".ForgotPassword"
+            android:name=".Instruction"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
