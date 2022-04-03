@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:translationY="40dp"
+        android:background="@drawable/ic_profile_img"/>
+    <TextView
+        android:id="@+id/text_profile_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя пользователя:"
+        android:layout_below="@id/profile_img"
+        android:textSize="24dp"
+        android:translationY="80dp"
+        android:translationX="40dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/text_profile_2"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Почта:"
+        android:layout_below="@id/profile_img"
+        android:textSize="24dp"
+        android:translationY="160dp"
+        android:translationX="40dp"/>
+    <TextView
+        android:id="@+id/text_profile_3"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Код читателя:"
+        android:layout_below="@id/profile_img"
+        android:textSize="24dp"
+        android:translationY="240dp"
+        android:translationX="40dp"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Регламент"
+        android:id="@+id/rectangle_10"
+        android:background="@drawable/rectangle_1"
+        android:layout_below="@id/text_profile_3"
+        android:layout_centerInParent="true"
+        android:translationY="320dp"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Выйти"
+        android:id="@+id/rectangle_11"
+        android:background="@drawable/rectangle_1"
+        android:layout_below="@id/text_profile_3"
+        android:layout_centerInParent="true"
+        android:translationY="400dp"/>
+</RelativeLayout>
