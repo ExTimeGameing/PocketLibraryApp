@@ -29,18 +29,21 @@
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_maps.xml" value="0.21975203078238564" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_reglament.xml" value="0.23725055432372505" />
-        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_search.xml" value="0.1923899102180419" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_search.xml" value="0.22" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_server_connection.xml" value="0.21946902654867256" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_status.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/actual_news.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_actual_news.xml" value="0.25" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_book_search.xml" value="0.33" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_books_list.xml" value="0.33" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_dashboard.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_home.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_main.xml" value="0.2612227447627191" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_notifications.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_search.xml" value="0.2744762719110731" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/row_item.xml" value="0.33" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1923899102180419" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/menu/search_menu.xml" value="0.1923899102180419" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2235" />
