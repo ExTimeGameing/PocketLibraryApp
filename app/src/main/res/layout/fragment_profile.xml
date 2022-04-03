@@ -43,22 +43,24 @@
         android:textSize="24dp"
         android:translationY="240dp"
         android:translationX="40dp"/>
+
     <Button
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:text="Регламент"
         android:id="@+id/rectangle_10"
-        android:background="@drawable/rectangle_1"
-        android:layout_below="@id/text_profile_3"
-        android:layout_centerInParent="true"
-        android:translationY="320dp"/>
-    <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:text="Выйти"
-        android:id="@+id/rectangle_11"
-        android:background="@drawable/rectangle_1"
         android:layout_below="@id/text_profile_3"
         android:layout_centerInParent="true"
-        android:translationY="400dp"/>
+        android:background="@drawable/rectangle_1"
+        android:text="Регламент"
+        android:translationY="320dp" />
+
+    <Button
+        android:id="@+id/rectangle_11"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_profile_3"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_1"
+        android:text="Выйти"
+        android:translationY="400dp" />
 </RelativeLayout>
