@@ -35,6 +35,7 @@
 
     <!-- Почта -->
     <Button
+        android:drawableLeft="@drawable/ic_new_user"
         android:id="@+id/rectangle_6"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -52,6 +53,7 @@
         tools:layout_editor_absoluteY="244dp" />
 
     <Button
+        android:drawableLeft="@drawable/ic_password"
         android:id="@+id/rectangle_7"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
