@@ -23,11 +23,19 @@
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout-v21/activity_sign_up.xml" value="0.11796875" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout-v31/activity_sign_up.xml" value="0.15729166666666666" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_instruction.xml" value="0.1923899102180419" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_log_in.xml" value="0.2744762719110731" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_login.xml" value="0.29528985507246375" />
-        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_server_connection.xml" value="0.21946902654867256" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/actual_news.xml" value="0.2744762719110731" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_actual_news.xml" value="0.25" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_dashboard.xml" value="0.2744762719110731" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_home.xml" value="0.2744762719110731" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_main.xml" value="0.2612227447627191" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/layout/fragment_notifications.xml" value="0.2744762719110731" />
+        <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1923899102180419" />
         <entry key="..\:/Users/mi/AndroidStudioProjects/PocketLibrary/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2235" />
       </map>
     </option>

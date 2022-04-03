@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="NEWS"
+    android:id="@+id/news_fragment">
+    <TextView
+        android:id="@+id/text_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новинки"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:translationY="40dp"
+        android:translationX="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_1"
+        android:layout_below="@id/text_new"
+        android:translationY="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/temp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статья дня"
+        android:id="@+id/arcticule_Day"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_below="@id/container_1"
+        android:translationY="40dp"
+        android:translationX="20dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/arcticule_Day"
+        android:layout_centerInParent="true"
+        android:background="@drawable/articule"
+        android:translationY="60dp" />
+</RelativeLayout>

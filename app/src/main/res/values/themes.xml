@@ -16,4 +16,11 @@
     <style name="Tabs">
         <item name="colorPrimary">@color/tabs</item>
     </style>
+    <style name="Theme.PocketLibrary.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.PocketLibrary.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.PocketLibrary.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
