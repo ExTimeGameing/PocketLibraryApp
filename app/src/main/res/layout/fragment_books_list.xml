@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:adnroid="http://schemas.android.com/apk/res-auto"
+    tools:context=".BooksList">
+
+    <TextView
+        android:id="@+id/text_books_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Взятые книги"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:translationY="40dp"
+        android:textColor="@color/black"
+        android:translationX="20dp"/>
+    <TextView
+        android:id="@+id/text_books_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@id/text_books_1"
+        android:translationY="50dp"
+        android:translationX="20dp"
+        android:drawableLeft="@drawable/ic_bookmark"
+        android:text="В этом разделе будут храниться книги,\nкоторые вы читаете в данный момент"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_1"
+        android:layout_below="@id/text_books_2"
+        android:translationY="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/temp"
+                android:translationX="20dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/text_books_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_1"
+        android:text="Просроченные книги"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:translationX="20dp"
+        android:translationY="120dp" />
+
+    <TextView
+        android:id="@+id/text_books_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_books_3"
+        android:drawableLeft="@drawable/ic_deadline"
+        android:text="В этом разделе будут храниться книги,\nсрок сдачи которых истек"
+        android:textSize="18dp"
+        android:translationX="20dp"
+        android:translationY="132dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/container_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_books_4"
+        android:translationY="142dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/temp"
+                android:translationX="20dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
