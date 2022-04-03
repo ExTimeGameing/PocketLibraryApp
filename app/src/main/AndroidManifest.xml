@@ -10,16 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketLibrary">
         <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ForgotPassword"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Instruction"
             android:exported="true" />
