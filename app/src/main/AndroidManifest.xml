@@ -3,17 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pocketlibrary"
     tools:ignore="ExtraText">
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <permission
         android:name="com.example.map.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
     <permission
         android:name="com.example.map.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
-    <uses-permission android:name="com.example.map.permission.MAPS_RECEIVE"/>
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.map.permission.MAPS_RECEIVE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +24,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketLibrary">
-        <meta-data android:name="com.google.android.gms.version"
+        <activity
+            android:name=".status"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -42,9 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ForgotPassword"
             android:exported="true" />

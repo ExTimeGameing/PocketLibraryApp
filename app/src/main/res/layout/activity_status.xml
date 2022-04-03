@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".status">
+
+    <ImageView
+        android:id="@+id/status_1"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_check"
+        android:translationY="100dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бронь успешно создана!\nВы сможете забарть свою книгу\n09:00-23:00"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_below="@id/status_1"
+        android:translationY="120dp"/>
+
+    <TextView
+        android:id="@+id/status_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_text"
+        android:layout_centerInParent="true"
+        android:text="__.__.__ Заказ №_____"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:translationY="120dp" />
+    <Button
+        android:id="@+id/rectangle_13"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="МОИ КНИГИ"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_2"
+        android:layout_below="@id/status_text"
+        android:translationY="300dp"/>
+</RelativeLayout>
