@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reglament">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_back"
+    android:background="@drawable/rectangle_1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1)Через 15 дней после истечения срока пользования
+книгами и иными печатными материалами, если продление не осуществлялось, и через 30 дней, если продление было сделано, сотрудники библиотеки должны послать напоминание или сообщить читателю по почте о необходимости их возврата в библиотеку в десятидневный срок. Если книги и иные печатные материалы в этот срок не возвращены в библиотеку, библиотека посылает пользователю требование об их
+возврате или замене еще в течение 10 дней равноценными по содержанию и
+стоимости.
+2)Пользователи могут быть лишены права пользования “БвК” на
+конкретный или постоянный срок в следующих случаях:
+- при систематическом нарушении установленных
+библиотекой сроков
+возврата книги без уважительной причины;
+- при преднамеренном повреждении имущества
+библиотеки;
+- при отказе пользователя возместить ущерб;
+- при неэтичном поведении пользователя в библиотеке, мешающем
+деятельности других пользователей и персоналу библиотеки;
+- в случае отказа от добровольного возмещения ущерба библиотеке пользователь отвечает за причиненный ущерб в соответствии с законодательством
+Российской Федерации.\n\n"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:translationX="10dp" />
+    </ScrollView>
+</RelativeLayout>
