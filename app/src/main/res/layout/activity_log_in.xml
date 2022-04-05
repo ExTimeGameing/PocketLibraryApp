@@ -31,29 +31,46 @@
         android:text="Регистрация"
         android:textSize="15sp"
         android:typeface="sans"
+        android:onClick="loginClick"
         tools:ignore="MissingConstraints" />
 
     <!-- Почта -->
+    <EditText
+        android:id="@+id/et_user_name_1"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:hint="Имя пользователя"
+        android:layout_alignParentLeft="true"
+        android:translationX="40dp"
+        android:elevation="3dp"
+        android:layout_below="@id/rectangle_6"
+        android:translationY="-45dp"/>
+    <EditText
+        android:id="@+id/et_password_1"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:translationX="40dp"
+        android:layout_alignParentLeft="true"
+        android:elevation="3dp"
+        android:textSize="16dp"
+        android:hint="Пароль"
+        android:layout_below="@id/rectangle_7"
+        android:translationY="-45dp"/>
+
     <Button
-        android:drawableLeft="@drawable/ic_new_user"
         android:id="@+id/rectangle_6"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/rectangle_7"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginBottom="-2dp"
         android:background="@drawable/rectangle_1"
         android:clickable="false"
-        android:elevation="4dp"
-        android:hint="Имя пользователя"
-        android:textAlignment="textStart"
+        android:drawableLeft="@drawable/ic_new_user"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="244dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:drawableLeft="@drawable/ic_password"
         android:id="@+id/rectangle_7"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -61,19 +78,17 @@
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_2"
         android:clickable="false"
-        android:hint="Пароль"
-        android:textAlignment="textStart"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-14dp"
-        tools:layout_editor_absoluteY="294dp" />
+        android:drawableLeft="@drawable/ic_password" />
+
     <TextView
+        android:id="@+id/forgot"
         android:layout_width="wrap_content"
-        android:layout_alignLeft="@id/rectangle_7"
-        android:translationX="15dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/rectangle_7"
-        android:hint = "Забыли пароль?"
-        />
+        android:layout_alignLeft="@id/rectangle_7"
+        android:hint="Забыли пароль?"
+        android:translationX="15dp"
+        android:onClick="loginClick"/>
     <!-- Шар снизу сзади     -->
     <View
         android:id="@+id/ellipse_6"
@@ -123,6 +138,7 @@
         tools:ignore="MissingConstraints" />
 
     <View
+        android:onClick="loginClick"
         android:id="@+id/ellipse_10"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -131,8 +147,8 @@
         android:layout_marginTop="-9dp"
         android:background="@drawable/circle3"
         android:elevation="10dp"
-        android:translationY="30dp"
         android:translationX="30dp"
+        android:translationY="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />

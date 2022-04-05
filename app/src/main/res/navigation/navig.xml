@@ -19,9 +19,19 @@
         android:name="com.example.pocketlibrary.profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
-    <activity
+    <fragment
         android:id="@+id/search"
         android:name="com.example.pocketlibrary.search"
         android:label="activity_search"
         tools:layout="@layout/activity_search" />
+    <fragment
+        android:id="@+id/book"
+        android:name="com.example.pocketlibrary.book"
+        android:label="activity_book"
+        tools:layout="@layout/activity_book" />
+    <fragment
+        android:id="@+id/reglament"
+        android:name="com.example.pocketlibrary.reglament"
+        android:label="activity_reglament"
+        tools:layout="@layout/activity_reglament" />
 </navigation>

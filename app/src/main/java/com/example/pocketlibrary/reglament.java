@@ -1,14 +1,27 @@
 package com.example.pocketlibrary;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class reglament extends AppCompatActivity {
+public class reglament extends Fragment {
+
+    public reglament() {
+        // Required empty public constructor
+    }
+
+    public static reglament newInstance() {
+        return new reglament();
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reglament);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.activity_reglament, container, false);
     }
 }

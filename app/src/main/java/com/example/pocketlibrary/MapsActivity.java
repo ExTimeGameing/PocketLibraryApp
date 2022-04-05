@@ -2,7 +2,9 @@ package com.example.pocketlibrary;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -47,5 +49,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+
+    public void mapClick(View view) {
+        switch (view.getId()){
+            case R.id.rectangle_12:{
+                Intent intent = new Intent(this, status.class);
+                startActivity(intent);
+                break;
+            }
+        }
     }
 }

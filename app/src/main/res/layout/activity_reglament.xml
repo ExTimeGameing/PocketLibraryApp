@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".reglament">
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:drawableLeft="@drawable/ic_back"
-    android:background="@drawable/rectangle_1"/>
+
+    <Button
+        android:id="@+id/back_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_1"
+        android:drawableLeft="@drawable/ic_back"
+        android:onClick="clickListener"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,7 +37,7 @@
 - при неэтичном поведении пользователя в библиотеке, мешающем
 деятельности других пользователей и персоналу библиотеки;
 - в случае отказа от добровольного возмещения ущерба библиотеке пользователь отвечает за причиненный ущерб в соответствии с законодательством
-Российской Федерации.\n\n"
+Российской Федерации.\n\n\n\n\n"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:translationX="10dp" />

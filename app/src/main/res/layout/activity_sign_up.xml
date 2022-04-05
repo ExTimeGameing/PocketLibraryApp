@@ -20,7 +20,8 @@
         android:textSize="36dp"
         android:typeface="sans"
         android:textStyle="bold"
-        android:translationY="-15dp" />
+        android:translationY="-15dp"
+        />
 
     <Button
         android:id="@+id/rectangle_4"
@@ -29,15 +30,47 @@
         android:layout_alignBottom="@id/ellipse_2"
         android:layout_alignParentRight="true"
         android:background="@drawable/rectangle_2"
-        android:elevation="4dp"
         android:text="@string/log_in_text"
         android:textSize="15sp"
         android:typeface="sans"
+        android:onClick="signupClick"
         tools:ignore="MissingConstraints" />
 
     <!-- Почта -->
+    <EditText
+        android:id="@+id/et_user_name_2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:hint="Имя пользователя"
+        android:elevation="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rectangle_1"
+        android:translationY="-50dp"
+        android:translationX="40dp"/>
+    <EditText
+        android:id="@+id/et_password_2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:hint="Пароль"
+        android:elevation="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rectangle_2"
+        android:translationY="-45dp"
+        android:translationX="40dp"/>
+    <EditText
+        android:id="@+id/et_user_name_3"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:hint="Почта"
+        android:elevation="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rectangle_3"
+        android:translationY="-45dp"
+        android:translationX="40dp"/>
     <Button
-        android:drawableLeft="@drawable/ic_new_user"
         android:id="@+id/rectangle_1"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -45,18 +78,12 @@
         android:layout_marginBottom="-1dp"
         android:background="@drawable/rectangle_1"
         android:clickable="false"
-        android:elevation="4dp"
-        android:hint="Имя пользователя"
-        android:textAlignment="textStart"
+        android:drawableLeft="@drawable/ic_new_user"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <!-- Пароль -->
     <Button
-        android:drawableLeft="@drawable/ic_email"
         android:id="@+id/rectangle_3"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -67,13 +94,10 @@
         android:layout_marginTop="-1dp"
         android:background="@drawable/rectangle_1"
         android:clickable="false"
-        android:elevation="4dp"
-        android:hint="Почта"
-        android:textAlignment="textStart"
+        android:drawableLeft="@drawable/ic_email"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:drawableLeft="@drawable/ic_password"
         android:id="@+id/rectangle_2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -81,11 +105,8 @@
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_2"
         android:clickable="false"
-        android:hint="Пароль"
-        android:textAlignment="textStart"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-14dp"
-        tools:layout_editor_absoluteY="294dp" />
+        android:drawableLeft="@drawable/ic_password"
+        tools:ignore="MissingConstraints"/>
     <!-- Шар снизу сзади     -->
     <View
         android:id="@+id/ellipse_4"
@@ -150,6 +171,7 @@
         android:translationX="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:onClick="signupClick"
         tools:ignore="MissingConstraints" />
 
 

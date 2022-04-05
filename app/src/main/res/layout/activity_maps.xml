@@ -17,5 +17,5 @@
         android:translationX="90dp"
         android:textSize="15sp"
         android:typeface="sans"
-        />
+        android:onClick="mapClick"/>
 </fragment>

@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".book">
+
     <Button
         android:id="@+id/back_1"
+        android:onClick="clickListener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_1"
-        android:drawableLeft="@drawable/ic_back"/>
+        android:drawableLeft="@drawable/ic_back" />
     <ImageView
         android:id="@+id/imageView_2"
         android:layout_width="300dp"
@@ -36,13 +38,16 @@
             android:textColor="@color/black"
             android:layout_height="350dp"/>
     </ScrollView>
+
     <Button
+        android:id="@+id/buy"
         android:layout_width="320dp"
-        android:translationY="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des"
+        android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
         android:text="Забронировать"
         android:textColor="@color/black"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/des"
-        android:layout_height="wrap_content"/>
+        android:translationY="80dp"
+        android:onClick="clickListener"/>
 </RelativeLayout>
