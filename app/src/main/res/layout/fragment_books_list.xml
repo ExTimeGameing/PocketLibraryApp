@@ -28,19 +28,21 @@
         android:text="В этом разделе будут храниться книги,\nкоторые вы читаете в данный момент"/>
 
     <HorizontalScrollView
+        android:id="@+id/container_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/container_1"
         android:layout_below="@id/text_books_2"
         android:translationY="60dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="200dp"
                 android:background="@drawable/temp"
-                android:translationX="20dp"/>
+                android:translationX="20dp" />
         </LinearLayout>
     </HorizontalScrollView>
 

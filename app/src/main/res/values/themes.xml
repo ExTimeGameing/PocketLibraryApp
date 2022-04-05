@@ -23,4 +23,8 @@
     <style name="Theme.PocketLibrary.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.PocketLibrary.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="bottom">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+    </style>
 </resources>

@@ -16,39 +16,42 @@
         android:translationX="20dp"/>
 
     <HorizontalScrollView
+        android:id="@+id/container_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/container_1"
         android:layout_below="@id/text_new"
-        android:translationY="40dp">
+        android:translationY="80dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
                 android:background="@drawable/temp"
-                android:translationX="20dp"/>
+                android:translationX="20dp" />
         </LinearLayout>
     </HorizontalScrollView>
 
     <TextView
-        android:textColor="@color/black"
         android:id="@+id/arcticule_Day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/container_1"
         android:text="Статья дня"
+        android:textColor="@color/black"
         android:textSize="32dp"
         android:textStyle="bold"
         android:translationX="20dp"
-        android:translationY="40dp" />
+        android:translationY="160dp" />
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_width="330dp"
+        android:layout_height="240dp"
         android:layout_below="@id/arcticule_Day"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/articule"
-        android:translationY="50dp" />
+        android:translationY="180dp" />
 </RelativeLayout>

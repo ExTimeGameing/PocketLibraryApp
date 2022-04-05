@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="tabs">#058EC2</color>
+    <color name="blue">#31A5BA</color>
+    <color name="dark_blue">#1E626F</color>
 </resources>
