@@ -112,5 +112,5 @@
         android:translationY="300dp"
         android:typeface="sans"
         tools:ignore="MissingConstraints"
-        android:onClick="goClick"/>
+        android:onClick="clickListener"/>
 </RelativeLayout>

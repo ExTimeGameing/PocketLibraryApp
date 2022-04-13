@@ -9,10 +9,13 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,20 +48,29 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.fragmentContainerView, fragment);
         ft.commit();
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottomNavig);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        loadFragment(SignUp.newInstance());
+        navigation.setVisibility(View.GONE);
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         if (bool){
             loadFragment(book.newInstance());
             bool = false;
         }
+
     }
     Boolean bool = false;
     public void clickListener(View view){
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottomNavig);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         switch (view.getId()){
             case R.id.ants_book:{
                 loadFragment(book.newInstance());
@@ -74,9 +86,10 @@ public class MainActivity extends AppCompatActivity {
                 loadFragment(reglament.newInstance());
                 break;
             }
-            case R.id.rectangle_11:{
-                Intent intent = new Intent(this, LogIn.class);
-                startActivity(intent);
+            case R.id.rectangle_11:
+            case R.id.rectangle_4:
+            case R.id.send_btn: {
+                loadFragment(LogIn.newInstance());
                 break;
             }
             case R.id.back_2:{
@@ -85,6 +98,24 @@ public class MainActivity extends AppCompatActivity {
             }
             case R.id.back_1:{
                 loadFragment(BooksList.newInstance());
+                break;
+            }
+            case R.id.ellipse_5:{
+                loadFragment(Instruction.newInstance());
+                break;
+            }
+            case R.id.ellipse_10:
+            case R.id.rectangle_8: {
+                loadFragment(ActualNews.newInstance());
+                navigation.setVisibility(View.VISIBLE);
+                break;
+            }
+            case R.id.forgot:{
+                loadFragment(ForgotPassword.newInstance());
+                break;
+            }
+            case R.id.rectangle_5:{
+                loadFragment(SignUp.newInstance());
                 break;
             }
         }

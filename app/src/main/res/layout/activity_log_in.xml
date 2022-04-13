@@ -31,7 +31,7 @@
         android:text="Регистрация"
         android:textSize="15sp"
         android:typeface="sans"
-        android:onClick="loginClick"
+        android:onClick="clickListener"
         tools:ignore="MissingConstraints" />
 
     <!-- Почта -->
@@ -88,7 +88,7 @@
         android:layout_alignLeft="@id/rectangle_7"
         android:hint="Забыли пароль?"
         android:translationX="15dp"
-        android:onClick="loginClick"/>
+        android:onClick="clickListener"/>
     <!-- Шар снизу сзади     -->
     <View
         android:id="@+id/ellipse_6"
@@ -138,7 +138,7 @@
         tools:ignore="MissingConstraints" />
 
     <View
-        android:onClick="loginClick"
+        android:onClick="clickListener"
         android:id="@+id/ellipse_10"
         android:layout_width="64dp"
         android:layout_height="64dp"

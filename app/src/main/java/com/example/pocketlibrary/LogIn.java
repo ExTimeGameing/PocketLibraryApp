@@ -1,36 +1,28 @@
 package com.example.pocketlibrary;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-public class LogIn extends AppCompatActivity {
+public class LogIn extends Fragment {
+
+    public LogIn(){}
+
+    public static LogIn newInstance() {
+        return new LogIn();
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.activity_log_in, container, false);
     }
 
-    public void loginClick(View view) {
-        switch (view.getId()){
-            case R.id.ellipse_10:{
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                break;
-            }
-            case R.id.forgot:{
-                Intent intent = new Intent(this, ForgotPassword.class);
-                startActivity(intent);
-                break;
-            }
-            case R.id.rectangle_5:{
-                Intent intent = new Intent(this, SignUp.class);
-                startActivity(intent);
-                break;
-            }
-        }
-    }
 }
