@@ -1,14 +1,13 @@
-package com.example.pocketlibrary;
+package com.example.pocketlibrary.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.pocketlibrary.R;
 
 public class LogIn extends Fragment {
 

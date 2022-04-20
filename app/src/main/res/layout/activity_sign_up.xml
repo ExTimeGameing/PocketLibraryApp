@@ -6,7 +6,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:clipToOutline="true"
-    tools:context=".SignUp"
+    tools:context=".View.SignUp"
     tools:targetApi="s">
     <!-- Вход -->
     <!-- Имя пользователя -->
@@ -70,6 +70,7 @@
         android:layout_below="@id/rectangle_3"
         android:translationY="-45dp"
         android:translationX="40dp"/>
+
     <Button
         android:id="@+id/rectangle_1"
         android:layout_width="350dp"
@@ -80,7 +81,7 @@
         android:clickable="false"
         android:drawableLeft="@drawable/ic_new_user"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Пароль -->
     <Button

@@ -1,6 +1,5 @@
-package com.example.pocketlibrary;
+package com.example.pocketlibrary.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
@@ -8,20 +7,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class book extends Fragment {
+import com.example.pocketlibrary.R;
 
-    public book() {
-        // Required empty public constructor
+
+public class search extends Fragment {
+    public search(){
     }
 
-    public static book newInstance() {
-        return new book();
+    public static search newInstance() {
+        return new search();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_book, container, false);
+        return inflater.inflate(R.layout.activity_search, container, false);
     }
+
+
 }
+

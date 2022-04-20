@@ -7,65 +7,65 @@
 
     <fragment
         android:id="@+id/actualNews"
-        android:name="com.example.pocketlibrary.ActualNews"
+        android:name="com.example.pocketlibrary.View.ActualNews"
         android:label="ActualNews" />
     <fragment
         android:id="@+id/booksList"
-        android:name="com.example.pocketlibrary.BooksList"
+        android:name="com.example.pocketlibrary.View.BooksList"
         android:label="fragment_books_list"
         tools:layout="@layout/fragment_books_list" />
     <fragment
         android:id="@+id/profile2"
-        android:name="com.example.pocketlibrary.profile"
+        android:name="com.example.pocketlibrary.View.profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/search"
-        android:name="com.example.pocketlibrary.search"
+        android:name="com.example.pocketlibrary.View.search"
         android:label="activity_search"
         tools:layout="@layout/activity_search" />
     <fragment
         android:id="@+id/book"
-        android:name="com.example.pocketlibrary.book"
+        android:name="com.example.pocketlibrary.View.book"
         android:label="activity_book"
         tools:layout="@layout/activity_book" />
     <fragment
         android:id="@+id/reglament"
-        android:name="com.example.pocketlibrary.reglament"
+        android:name="com.example.pocketlibrary.View.reglament"
         android:label="activity_reglament"
         tools:layout="@layout/activity_reglament" />
     <fragment
         android:id="@+id/forgotPassword"
-        android:name="com.example.pocketlibrary.ForgotPassword"
+        android:name="com.example.pocketlibrary.View.ForgotPassword"
         android:label="activity_forgot_password"
         tools:layout="@layout/activity_forgot_password" />
     <fragment
         android:id="@+id/serverConnection"
-        android:name="com.example.pocketlibrary.ServerConnection"
+        android:name="com.example.pocketlibrary.View.ServerConnection"
         android:label="ServerConnection" />
     <fragment
         android:id="@+id/instruction"
-        android:name="com.example.pocketlibrary.Instruction"
+        android:name="com.example.pocketlibrary.View.Instruction"
         android:label="activity_instruction"
         tools:layout="@layout/activity_instruction" />
     <fragment
         android:id="@+id/logIn"
-        android:name="com.example.pocketlibrary.LogIn"
+        android:name="com.example.pocketlibrary.View.LogIn"
         android:label="activity_log_in"
         tools:layout="@layout/activity_log_in" />
     <fragment
         android:id="@+id/signUp"
-        android:name="com.example.pocketlibrary.SignUp"
+        android:name="com.example.pocketlibrary.View.SignUp"
         android:label="activity_sign_up"
         tools:layout="@layout/activity_sign_up" />
     <activity
         android:id="@+id/status"
-        android:name="com.example.pocketlibrary.status"
+        android:name="com.example.pocketlibrary.View.status"
         android:label="activity_status"
         tools:layout="@layout/activity_status" />
     <activity
         android:id="@+id/mapsActivity"
-        android:name="com.example.pocketlibrary.MapsActivity"
+        android:name="com.example.pocketlibrary.View.MapsActivity"
         android:label="activity_maps"
         tools:layout="@layout/activity_maps" />
 </navigation>

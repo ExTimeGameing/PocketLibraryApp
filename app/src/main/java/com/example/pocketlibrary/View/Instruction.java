@@ -1,28 +1,28 @@
-package com.example.pocketlibrary;
-
-import android.os.Bundle;
+package com.example.pocketlibrary.View;
 
 import androidx.fragment.app.Fragment;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ActualNews extends Fragment {
+import com.example.pocketlibrary.R;
 
-    public ActualNews() {
+public class Instruction extends Fragment {
+
+    public Instruction() {
         // Required empty public constructor
     }
 
-    public static ActualNews newInstance() {
-        return new ActualNews();
+    public static Instruction newInstance() {
+        return new Instruction();
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_actual_news, container, false);
+        return inflater.inflate(R.layout.activity_instruction, container, false);
     }
 }

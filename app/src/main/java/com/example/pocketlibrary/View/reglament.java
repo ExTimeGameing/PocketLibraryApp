@@ -1,26 +1,28 @@
-package com.example.pocketlibrary;
+package com.example.pocketlibrary.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SignUp extends Fragment {
+import com.example.pocketlibrary.R;
 
-    public SignUp(){}
+public class reglament extends Fragment {
 
-    public static SignUp newInstance () {
-        return new SignUp();
+    public reglament() {
+        // Required empty public constructor
+    }
+
+    public static reglament newInstance() {
+        return new reglament();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_sign_up, container, false);
+        return inflater.inflate(R.layout.activity_reglament, container, false);
     }
 }

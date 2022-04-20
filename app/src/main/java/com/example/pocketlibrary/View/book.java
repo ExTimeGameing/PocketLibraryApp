@@ -1,28 +1,28 @@
-package com.example.pocketlibrary;
+package com.example.pocketlibrary.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ForgotPassword extends Fragment {
+import com.example.pocketlibrary.R;
 
-    public ForgotPassword() {
+public class book extends Fragment {
+
+    public book() {
         // Required empty public constructor
     }
 
-    public static ForgotPassword newInstance() {
-        return new ForgotPassword();
+    public static book newInstance() {
+        return new book();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_forgot_password, container, false);
+        return inflater.inflate(R.layout.activity_book, container, false);
     }
 }

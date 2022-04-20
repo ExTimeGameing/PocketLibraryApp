@@ -1,17 +1,15 @@
-package com.example.pocketlibrary;
+package com.example.pocketlibrary.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.pocketlibrary.R;
+
 import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
 
 public class ServerConnection extends Fragment {
     Timer timer;

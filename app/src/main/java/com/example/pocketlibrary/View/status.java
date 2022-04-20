@@ -1,10 +1,12 @@
-package com.example.pocketlibrary;
+package com.example.pocketlibrary.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.pocketlibrary.R;
 
 public class status extends AppCompatActivity {
 

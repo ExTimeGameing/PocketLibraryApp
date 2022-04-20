@@ -1,28 +1,28 @@
-package com.example.pocketlibrary;
-
-import android.os.Bundle;
+package com.example.pocketlibrary.View;
 
 import androidx.fragment.app.Fragment;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class BooksList extends Fragment {
+import com.example.pocketlibrary.R;
 
-    public BooksList() {
+public class ForgotPassword extends Fragment {
+
+    public ForgotPassword() {
         // Required empty public constructor
     }
 
-
-    public static BooksList newInstance() {
-        return new BooksList();
+    public static ForgotPassword newInstance() {
+        return new ForgotPassword();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_books_list, container, false);
+        return inflater.inflate(R.layout.activity_forgot_password, container, false);
     }
 }

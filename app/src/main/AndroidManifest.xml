@@ -25,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketLibrary">
         <activity
-            android:name=".status"
+            android:name=".View.status"
             android:exported="false" />
         <meta-data
             android:name="com.google.android.gms.version"
@@ -35,11 +35,11 @@
             android:value="AIzaSyA5NrJDNWuKrGYsIcCiKKSErdnSTUjjKLo" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".View.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

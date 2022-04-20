@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile">
-
+    tools:context=".View.profile">
+    
     <ImageView
         android:id="@+id/profile_img"
         android:layout_width="256dp"
@@ -13,16 +13,17 @@
         android:layout_alignParentTop="true"
         android:translationY="40dp"
         android:background="@drawable/ic_profile_img"/>
+
     <TextView
         android:id="@+id/text_profile_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Имя пользователя:"
         android:layout_below="@id/profile_img"
+        android:textColor="@color/black"
         android:textSize="24dp"
-        android:translationY="80dp"
+        android:text="Имя пользователя: "
         android:translationX="40dp"
-        android:textColor="@color/black"/>
+        android:translationY="80dp" />
     <TextView
         android:id="@+id/text_profile_2"
         android:textColor="@color/black"
@@ -33,16 +34,17 @@
         android:textSize="24dp"
         android:translationY="160dp"
         android:translationX="40dp"/>
+
     <TextView
         android:id="@+id/text_profile_3"
-        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Код читателя:"
         android:layout_below="@id/profile_img"
+        android:text="Код читателя:"
+        android:textColor="@color/black"
         android:textSize="24dp"
-        android:translationY="240dp"
-        android:translationX="40dp"/>
+        android:translationX="40dp"
+        android:translationY="240dp" />
 
     <Button
         android:id="@+id/rectangle_10"
@@ -62,7 +64,7 @@
         android:layout_below="@id/text_profile_3"
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
+        android:onClick="clickListener"
         android:text="Выйти"
-        android:translationY="400dp"
-        android:onClick="clickListener"/>
+        android:translationY="400dp" />
 </RelativeLayout>
