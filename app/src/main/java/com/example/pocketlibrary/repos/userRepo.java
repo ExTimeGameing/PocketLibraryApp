@@ -7,7 +7,7 @@ public class userRepo {
 
     public userRepo(){
         userSet[0] = new User();
-        userSet[0].setCode(1);
+        userSet[0].setCode("666");
         userSet[0].setNickname("Егор");
         userSet[0].setPassword("111");
         userSet[0].setEmail("alister@mail.ru");

@@ -7,7 +7,7 @@ import com.example.pocketlibrary.repos.userRepo;
 
 public class userViewModel extends ViewModel {
     private User mUser = new User();
-    private userRepo repo = new userRepo();
+    private userRepo repo;
 
     public void setData(){
         mUser = userRepo.userSet[0];

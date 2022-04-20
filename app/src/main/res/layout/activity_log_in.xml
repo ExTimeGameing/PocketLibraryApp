@@ -44,7 +44,8 @@
         android:translationX="40dp"
         android:elevation="3dp"
         android:layout_below="@id/rectangle_6"
-        android:translationY="-45dp"/>
+        android:translationY="-45dp"
+        />
     <EditText
         android:id="@+id/et_password_1"
         android:layout_width="270dp"
@@ -138,7 +139,6 @@
         tools:ignore="MissingConstraints" />
 
     <View
-        android:onClick="clickListener"
         android:id="@+id/ellipse_10"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -147,6 +147,7 @@
         android:layout_marginTop="-9dp"
         android:background="@drawable/circle3"
         android:elevation="10dp"
+        android:onClick="clickListener"
         android:translationX="30dp"
         android:translationY="30dp"
         app:layout_constraintLeft_toLeftOf="parent"

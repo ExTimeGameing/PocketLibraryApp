@@ -1,32 +1,22 @@
 package com.example.pocketlibrary.View;
 
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import com.example.pocketlibrary.R;
 import com.example.pocketlibrary.ViewModel.userViewModel;
 import com.example.pocketlibrary.databinding.FragmentProfileBinding;
 
-import org.w3c.dom.Text;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link profile#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class profile extends Fragment {
     userViewModel model;
     FragmentProfileBinding binding;
+
     public profile() {
     }
 

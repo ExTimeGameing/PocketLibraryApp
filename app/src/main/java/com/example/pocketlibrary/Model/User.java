@@ -3,7 +3,7 @@ package com.example.pocketlibrary.Model;
 public class User {
     protected String nickname;
     protected String email;
-    protected int code;
+    protected String code;
     protected String password;
 
     public User() {}
@@ -32,11 +32,18 @@ public class User {
         this.email = email;
     }
 
-    public int getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
+    }
+
+    public static void loginUser(User user, String name, String password, String email, String code){
+        user.setNickname(name);
+        user.setPassword(password);
+        user.setEmail(email);
+        user.setCode(code);
     }
 }
