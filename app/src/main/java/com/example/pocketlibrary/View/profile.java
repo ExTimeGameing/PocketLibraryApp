@@ -1,5 +1,6 @@
 package com.example.pocketlibrary.View;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,13 +33,19 @@ public class profile extends Fragment {
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding = FragmentProfileBinding.bind(view);
-        binding.textProfile1.setText(model.getName());
-        binding.textProfile2.setText(model.getEmail());
-        binding.textProfile3.setText(model.getCode());
+
+        model.getmUser().observe(getViewLifecycleOwner(), user -> {
+            binding.textProfile1.setText("Имя пользователя: " + user.getNickname());
+            binding.textProfile2.setText("Почта: " + user.getEmail());
+            binding.textProfile3.setText("Код читателя: " + user.getCode());
+        });
+
+
     }
 
 }

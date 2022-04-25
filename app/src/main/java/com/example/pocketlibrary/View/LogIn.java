@@ -37,11 +37,4 @@ public class LogIn extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         binding = ActivityLogInBinding.bind(view);
     }
-
-    @Override
-    public void onDestroyView() {
-        repo.userSet[0].setNickname(binding.etUserName1.getText().toString());
-        repo.userSet[0].setPassword(binding.etPassword1.getText().toString());
-        super.onDestroyView();
-    }
 }

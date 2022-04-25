@@ -39,11 +39,4 @@ public class User {
     public void setCode(String code) {
         this.code = code;
     }
-
-    public static void loginUser(User user, String name, String password, String email, String code){
-        user.setNickname(name);
-        user.setPassword(password);
-        user.setEmail(email);
-        user.setCode(code);
-    }
 }

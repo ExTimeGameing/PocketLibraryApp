@@ -15,12 +15,14 @@ import android.widget.EditText;
 
 import com.example.pocketlibrary.Model.User;
 import com.example.pocketlibrary.R;
+import com.example.pocketlibrary.databinding.ActivityLogInBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends AppCompatActivity {
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -109,7 +111,10 @@ public class MainActivity extends AppCompatActivity {
                 loadFragment(Instruction.newInstance());
                 break;
             }
-            case R.id.ellipse_10:
+            case R.id.ellipse_10: {
+
+                break;
+            }
             case R.id.rectangle_8: {
                 loadFragment(ActualNews.newInstance());
                 navigation.setVisibility(View.VISIBLE);
