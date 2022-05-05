@@ -111,6 +111,5 @@
         android:textSize="15sp"
         android:translationY="300dp"
         android:typeface="sans"
-        tools:ignore="MissingConstraints"
-        android:onClick="clickListener"/>
+        tools:ignore="MissingConstraints" />
 </RelativeLayout>

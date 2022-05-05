@@ -93,11 +93,6 @@ public class MainActivity extends AppCompatActivity {
                 loadFragment(BooksList.newInstance());
                 break;
             }
-            case R.id.rectangle_8: {
-                loadFragment(ActualNews.newInstance());
-                navigation.setVisibility(View.VISIBLE);
-                break;
-            }
         }
     }
 }
