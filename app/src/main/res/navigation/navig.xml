@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navig"
-    app:startDestination="@id/actualNews">
+    app:startDestination="@id/serverConnection">
 
     <fragment
         android:id="@+id/actualNews"
@@ -42,22 +42,47 @@
     <fragment
         android:id="@+id/serverConnection"
         android:name="com.example.pocketlibrary.View.ServerConnection"
-        android:label="ServerConnection" />
+        android:label="ServerConnection" >
+        <action
+            android:id="@+id/action_serverConnection_to_logIn"
+            app:destination="@id/logIn" />
+    </fragment>
     <fragment
         android:id="@+id/instruction"
         android:name="com.example.pocketlibrary.View.Instruction"
         android:label="activity_instruction"
-        tools:layout="@layout/activity_instruction" />
+        tools:layout="@layout/activity_instruction" >
+        <action
+            android:id="@+id/action_instruction_to_actualNews"
+            app:destination="@id/actualNews" />
+    </fragment>
     <fragment
         android:id="@+id/logIn"
         android:name="com.example.pocketlibrary.View.LogIn"
         android:label="activity_log_in"
-        tools:layout="@layout/activity_log_in" />
+        tools:layout="@layout/activity_log_in" >
+        <action
+            android:id="@+id/action_logIn_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_logIn_to_actualNews"
+            app:destination="@id/actualNews" />
+        <action
+            android:id="@+id/action_logIn_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
+    </fragment>
     <fragment
         android:id="@+id/signUp"
         android:name="com.example.pocketlibrary.View.SignUp"
         android:label="activity_sign_up"
-        tools:layout="@layout/activity_sign_up" />
+        tools:layout="@layout/activity_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_logIn"
+            app:destination="@id/logIn" />
+        <action
+            android:id="@+id/action_signUp_to_instruction"
+            app:destination="@id/instruction" />
+    </fragment>
     <activity
         android:id="@+id/status"
         android:name="com.example.pocketlibrary.View.status"

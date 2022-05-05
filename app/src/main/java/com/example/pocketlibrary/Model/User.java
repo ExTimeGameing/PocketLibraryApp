@@ -36,7 +36,12 @@ public class User {
         return code;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setCode() {
+        this.code = hashing();
+    }
+
+    public String hashing(){
+        String newCode = String.valueOf(this.nickname.length());
+        return newCode;
     }
 }

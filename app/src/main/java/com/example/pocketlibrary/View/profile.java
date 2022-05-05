@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.example.pocketlibrary.R;
+import com.example.pocketlibrary.ViewModel.authViewModel;
 import com.example.pocketlibrary.ViewModel.userViewModel;
 import com.example.pocketlibrary.databinding.FragmentProfileBinding;
 
@@ -29,7 +30,7 @@ public class profile extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         model = new ViewModelProvider(this).get(userViewModel.class);
-        model.setData();
+        model.setData(authViewModel.giveUser());
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 

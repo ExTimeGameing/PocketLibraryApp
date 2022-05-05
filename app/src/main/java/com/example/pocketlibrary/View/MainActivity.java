@@ -2,22 +2,19 @@ package com.example.pocketlibrary.View;
 
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
-
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-
-import com.example.pocketlibrary.Model.User;
 import com.example.pocketlibrary.R;
-import com.example.pocketlibrary.databinding.ActivityLogInBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -51,26 +48,17 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
     }
 
+   static BottomNavigationView navigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottomNavig);
+        navigation = (BottomNavigationView) findViewById(R.id.bottomNavig);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.setVisibility(View.GONE);
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        if (bool){
-            loadFragment(book.newInstance());
-            bool = false;
-        }
-        loadFragment(SignUp.newInstance());
     }
 
-    Boolean bool = false;
+
     public void clickListener(View view){
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottomNavig);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -80,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.buy:{
-                bool = true;
                 Intent intent = new Intent(this, MapsActivity.class);
                 startActivity(intent);
                 break;
@@ -111,21 +98,9 @@ public class MainActivity extends AppCompatActivity {
                 loadFragment(Instruction.newInstance());
                 break;
             }
-            case R.id.ellipse_10: {
-
-                break;
-            }
             case R.id.rectangle_8: {
                 loadFragment(ActualNews.newInstance());
                 navigation.setVisibility(View.VISIBLE);
-                break;
-            }
-            case R.id.forgot:{
-                loadFragment(ForgotPassword.newInstance());
-                break;
-            }
-            case R.id.rectangle_5:{
-                loadFragment(SignUp.newInstance());
                 break;
             }
         }

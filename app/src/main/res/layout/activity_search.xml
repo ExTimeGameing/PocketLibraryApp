@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.search">
+
     <SearchView
         android:id="@+id/search_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Запрос сюда"/>
+        android:queryHint="Запрос сюда" />
         <RelativeLayout
             android:layout_width="410dp"
             android:id="@+id/row_item"

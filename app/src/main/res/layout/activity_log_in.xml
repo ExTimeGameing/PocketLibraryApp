@@ -19,8 +19,7 @@
         android:typeface="sans"
         android:textStyle="bold"
         android:translationY="-15dp" />
-
-    <Button
+Б    <Button
         android:id="@+id/rectangle_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,9 +30,7 @@
         android:text="Регистрация"
         android:textSize="15sp"
         android:typeface="sans"
-        android:onClick="clickListener"
         tools:ignore="MissingConstraints" />
-
     <!-- Почта -->
     <EditText
         android:id="@+id/et_user_name_1"
@@ -88,8 +85,7 @@
         android:layout_below="@id/rectangle_7"
         android:layout_alignLeft="@id/rectangle_7"
         android:hint="Забыли пароль?"
-        android:translationX="15dp"
-        android:onClick="clickListener"/>
+        android:translationX="15dp" />
     <!-- Шар снизу сзади     -->
     <View
         android:id="@+id/ellipse_6"
@@ -147,7 +143,7 @@
         android:layout_marginTop="-9dp"
         android:background="@drawable/circle3"
         android:elevation="10dp"
-        android:onClick="clickListener"
+        android:onClick="verifyLogin"
         android:translationX="30dp"
         android:translationY="30dp"
         app:layout_constraintLeft_toLeftOf="parent"

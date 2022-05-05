@@ -1,23 +1,24 @@
 package com.example.pocketlibrary.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.example.pocketlibrary.R;
+import com.example.pocketlibrary.ViewModel.authViewModel;
 import com.example.pocketlibrary.databinding.ActivityLogInBinding;
-import com.example.pocketlibrary.repos.userRepo;
+
 
 public class LogIn extends Fragment {
-    ActivityLogInBinding binding;
-    userRepo repo = new userRepo();
+    private static authViewModel auth = new authViewModel();
+    private static ActivityLogInBinding binding;
 
     public LogIn(){}
 
@@ -28,13 +29,47 @@ public class LogIn extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_log_in, container, false);
+        View view = inflater.inflate(R.layout.activity_log_in, container, false);
+        binding = ActivityLogInBinding.bind(view);
+        binding.ellipse10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isOkay()){
+                    Navigation.findNavController(view).navigate(R.id.action_logIn_to_actualNews);
+                    MainActivity.navigation.setVisibility(View.VISIBLE);
+                }
+                else{
+                    final AlertDialog.Builder dialog = new AlertDialog.Builder(binding.getRoot().getContext())
+                            .setTitle("ОШИБКА!")
+                            .setMessage("Вы ввели неверное имя пользователя или пароль!")
+                            .setPositiveButton("ОК", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            });
+                    dialog.show();
+                }
+            }
+        });
+        binding.rectangle5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_logIn_to_signUp);
+            }
+        });
+        binding.forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_logIn_to_forgotPassword);
+            }
+        });
+        return binding.getRoot();
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        binding = ActivityLogInBinding.bind(view);
+    public boolean isOkay(){
+        return auth.authentication(binding.etUserName1.getText().toString(),
+                                    binding.etPassword1.getText().toString());
     }
+
 }

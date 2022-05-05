@@ -27,4 +27,7 @@
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryVariant">@color/dark_blue</item>
     </style>
+    <style name="green">
+        <item name="colorPrimary">@color/green</item>
+    </style>
 </resources>
