@@ -33,7 +33,6 @@
         android:text="@string/log_in_text"
         android:textSize="15sp"
         android:typeface="sans"
-        android:onClick="clickListener"
         tools:ignore="MissingConstraints" />
 
     <!-- Почта -->
@@ -169,7 +168,6 @@
         android:layout_marginTop="-9dp"
         android:background="@drawable/circle3"
         android:elevation="10dp"
-        android:onClick="clickListener"
         android:translationX="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"

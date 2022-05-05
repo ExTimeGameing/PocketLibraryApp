@@ -6,18 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class userRepo {
-    public static List<User> userSet = new ArrayList<>();
+    public List<User> userSet = new ArrayList<>();
 
     public userRepo(){
-        User user = new User();
-        user.setNickname("Wizzer");
-        user.setEmail("bugrov102002@mail.ru");
-        user.setPassword("1111");
-        user.setCode();
-        addUser(user);
+        addUser("Wizzer", "bugrov102002@mail.ru", "1111");
     }
 
-    public void addUser(User user){
+    public void addUser(String name, String email, String password){
+        User user = new User();
+        user.setNickname(name);
+        user.setEmail(email);
+        user.setPassword(password);
+        user.setCode();
         userSet.add(user);
     }
 

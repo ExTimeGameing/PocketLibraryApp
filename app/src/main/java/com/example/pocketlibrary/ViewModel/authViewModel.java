@@ -23,7 +23,16 @@ public class authViewModel extends ViewModel {
         return false;
     }
 
+    public boolean haveUser(String name){
+        User mUser = repo.getUserByName(name);
+        return mUser != null;
+    }
+
     public static User giveUser(){
         return nUser;
+    }
+
+    public void setnUser(User user){
+        nUser = user;
     }
 }

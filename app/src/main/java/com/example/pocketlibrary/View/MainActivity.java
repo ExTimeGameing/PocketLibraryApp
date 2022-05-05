@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 navigation.setVisibility(View.GONE);
                 break;
             }
-            case R.id.rectangle_4:
             case R.id.send_btn: {
                 loadFragment(LogIn.newInstance());
                 break;
@@ -92,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
             }
             case R.id.back_1:{
                 loadFragment(BooksList.newInstance());
-                break;
-            }
-            case R.id.ellipse_5:{ ;
-                loadFragment(Instruction.newInstance());
                 break;
             }
             case R.id.rectangle_8: {

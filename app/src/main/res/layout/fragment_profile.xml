@@ -65,6 +65,6 @@
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
         android:onClick="clickListener"
-        android:text="Выйти"
+        android:text="Сайт разработчика"
         android:translationY="400dp" />
 </RelativeLayout>
