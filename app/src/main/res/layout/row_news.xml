@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id = "@+id/img_book_news"
+        android:layout_width = "200dp"
+        android:layout_height = "300dp"
+        android:background = "@color/white"
+        android:backgroundTint = "@color/white"
+        android:padding="10dp"/>
+    <TextView
+        android:translationX="15dp"
+        android:id = "@+id/tv_text_news"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize="20dp"
+        android:text = "Category Text"
+        android:textAlignment = "center"
+        />
+</LinearLayout>

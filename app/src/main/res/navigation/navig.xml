@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/actualNews"
         android:name="com.example.pocketlibrary.View.ActualNews"
-        android:label="ActualNews" />
+        android:label="ActualNews" >
+        <action
+            android:id="@+id/action_actualNews_to_book"
+            app:destination="@id/book" />
+    </fragment>
     <fragment
         android:id="@+id/booksList"
         android:name="com.example.pocketlibrary.View.BooksList"
