@@ -54,8 +54,7 @@
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
         android:text="Регламент"
-        android:translationY="320dp"
-        android:onClick="clickListener"/>
+        android:translationY="320dp" />
 
     <Button
         android:id="@+id/rectangle_11"
@@ -64,7 +63,7 @@
         android:layout_below="@id/text_profile_3"
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
-        android:onClick="clickListener"
         android:text="Сайт разработчика"
-        android:translationY="400dp" />
+        android:translationY="400dp"
+        android:drawableRight="@drawable/ic_git"/>
 </RelativeLayout>

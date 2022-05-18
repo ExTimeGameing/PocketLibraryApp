@@ -1,6 +1,10 @@
 package com.example.pocketlibrary.View;
 
+import static com.example.pocketlibrary.View.MainActivity.navCo;
+
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,7 +43,19 @@ public class Profile extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding = FragmentProfileBinding.bind(view);
-
+        binding.rectangle11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ExTimeGameing/PocketLibraryApp"));
+                startActivity(browserIntent);
+            }
+        });
+        binding.rectangle10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navCo.navigate(R.id.reglament);
+            }
+        });
         model.getmUser().observe(getViewLifecycleOwner(), user -> {
             binding.textProfile1.setText("Имя пользователя: " + user.getNickname());
             binding.textProfile2.setText("Почта: " + user.getEmail());
