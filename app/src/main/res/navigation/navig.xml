@@ -38,7 +38,11 @@
         android:id="@+id/forgotPassword"
         android:name="com.example.pocketlibrary.View.ForgotPassword"
         android:label="activity_forgot_password"
-        tools:layout="@layout/activity_forgot_password" />
+        tools:layout="@layout/activity_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword_to_logIn"
+            app:destination="@id/logIn" />
+    </fragment>
     <fragment
         android:id="@+id/serverConnection"
         android:name="com.example.pocketlibrary.View.ServerConnection"

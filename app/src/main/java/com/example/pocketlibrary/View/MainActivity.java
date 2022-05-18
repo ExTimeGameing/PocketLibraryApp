@@ -81,10 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 navigation.setVisibility(View.GONE);
                 break;
             }
-            case R.id.send_btn: {
-                loadFragment(LogIn.newInstance());
-                break;
-            }
             case R.id.back_2:{
                 loadFragment(profile.newInstance());
                 break;

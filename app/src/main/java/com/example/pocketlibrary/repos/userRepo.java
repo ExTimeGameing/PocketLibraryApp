@@ -9,7 +9,7 @@ public class userRepo {
     public List<User> userSet = new ArrayList<>();
 
     public userRepo(){
-        addUser("Wizzer", "bugrov102002@mail.ru", "1111");
+        addUser("Wizzer", "bugrov102002@yandex.ru", "1111");
     }
 
     public void addUser(String name, String email, String password){
