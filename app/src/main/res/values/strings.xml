@@ -20,4 +20,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="user_name">Имя</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_notification_channel_id">com.example.pocketlibrary</string>
+    <string name="default_notification_channel_name">Library</string>
+    <string name="msg_subscribed">Слушатель подписан</string>
+    <string name="msg_subscribe_failed">Ошибка, слушатель не подписан</string>
+    <string name="msg_token_fmt">Токе регистрации: %s</string>
+    <string name="fcm_message">Сообщение</string>
 </resources>

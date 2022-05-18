@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pocketlibrary"
     tools:ignore="ExtraText">
-
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <!--Permissions for internet-->
     <uses-permission android:name = "android.permission.INTERNET" />
@@ -15,6 +14,7 @@
         android:name="com.example.map.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
+
     <uses-permission android:name="com.example.map.permission.MAPS_RECEIVE" />
 
     <application
@@ -25,9 +25,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketLibrary">
-        <activity
-            android:name=".View.Status"
-            android:exported="false" />
+
+        <service
+            android:name=".ViewModel.MyFireBaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -35,10 +41,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA5NrJDNWuKrGYsIcCiKKSErdnSTUjjKLo" />
 
-        <activity
-            android:name=".View.MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps" />
         <activity
             android:name=".View.MainActivity"
             android:exported="true">

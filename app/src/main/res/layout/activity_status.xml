@@ -19,13 +19,13 @@
         android:id="@+id/status_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/status_1"
+        android:layout_centerInParent="true"
+        android:gravity="center"
         android:text="Бронь успешно создана!\nВы сможете забарть свою книгу\n09:00-23:00"
         android:textColor="@color/black"
         android:textSize="25dp"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:layout_below="@id/status_1"
-        android:translationY="120dp"/>
+        android:translationY="120dp" />
 
     <TextView
         android:id="@+id/status_text_1"
@@ -46,6 +46,5 @@
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_2"
         android:text="МОИ КНИГИ"
-        android:translationY="300dp"
-        android:onClick="bookClick"/>
+        android:translationY="300dp"/>
 </RelativeLayout>
