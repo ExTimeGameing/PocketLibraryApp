@@ -90,7 +90,4 @@ public class ActualNews extends Fragment {
         });
     }
 
-    public static void getBind(){
-        Navigation.findNavController(binding.getRoot()).navigate(R.id.action_actualNews_to_book);
-    }
 }

@@ -11,39 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:queryHint="Запрос сюда" />
-        <RelativeLayout
-            android:layout_width="410dp"
-            android:id="@+id/row_item"
-            android:layout_below="@id/search_3"
-            android:layout_height="282dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="140dp"
-                android:layout_height="200dp"
-                android:background="@drawable/temp"
-                android:translationX="20dp"
-                android:translationY="20dp"
-                tools:ignore="MissingConstraints" />
-            <TextView
-                android:id="@+id/textView_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imageView"
-                android:text="Book name"
-                android:textColor="@color/black"
-                android:textSize="42dp"
-                android:translationX="40dp"
-                android:translationY="20dp"/>
-            <TextView
-                android:id="@+id/textView_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView_1"
-                android:text="Author name"
-                android:layout_toRightOf="@id/imageView"
-                android:textSize="24dp"
-                android:translationX="40dp"
-                android:translationY="20dp"/>
-        </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_RV"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/search_3"/>
 </RelativeLayout>

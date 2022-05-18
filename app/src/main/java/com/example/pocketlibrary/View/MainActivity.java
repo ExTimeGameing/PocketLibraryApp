@@ -24,6 +24,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.pocketlibrary.Model.BookModel;
 import com.example.pocketlibrary.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -63,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
    static BottomNavigationView navigation;
     static NavHostFragment navHostFragment;
-    static NavController navCo;
+    public static NavController navCo;
+    public static BookModel mBookModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

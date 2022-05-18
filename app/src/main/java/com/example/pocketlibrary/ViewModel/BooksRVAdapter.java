@@ -1,5 +1,8 @@
 package com.example.pocketlibrary.ViewModel;
 
+import static com.example.pocketlibrary.View.MainActivity.mBookModel;
+import static com.example.pocketlibrary.View.MainActivity.navCo;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.pocketlibrary.Model.BookModel;
 import com.example.pocketlibrary.R;
 import com.example.pocketlibrary.View.ActualNews;
+import com.example.pocketlibrary.View.MainActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -45,13 +49,10 @@ public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHold
             @Override
             public void onClick(View view) {
                 model = bookModel;
-                ActualNews.getBind();
+                navCo.navigate(R.id.book);
+                mBookModel = model;
             }
         });
-    }
-
-    public static BookModel getModel() {
-        return model;
     }
 
     @Override

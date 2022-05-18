@@ -13,9 +13,7 @@
         <action
             android:id="@+id/action_actualNews_to_booksList2"
             app:destination="@id/booksList" />
-        <action
-            android:id="@+id/action_actualNews_to_book"
-            app:destination="@id/book" />
+
     </fragment>
     <fragment
         android:id="@+id/booksList"
@@ -42,9 +40,6 @@
         android:name="com.example.pocketlibrary.View.Book"
         android:label="activity_book"
         tools:layout="@layout/activity_book" >
-        <action
-            android:id="@+id/action_book_to_actualNews"
-            app:destination="@id/actualNews" />
     </fragment>
     <fragment
         android:id="@+id/reglament"

@@ -1,6 +1,7 @@
 package com.example.pocketlibrary.View;
 
 import static android.content.ContentValues.TAG;
+import static com.example.pocketlibrary.View.MainActivity.mBookModel;
 import static com.example.pocketlibrary.View.MainActivity.navCo;
 
 import androidx.annotation.NonNull;
@@ -8,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,6 +20,7 @@ import com.example.pocketlibrary.R;
 import com.example.pocketlibrary.ViewModel.AuthViewModel;
 import com.example.pocketlibrary.ViewModel.BookViewModel;
 import com.example.pocketlibrary.ViewModel.BooksRVAdapter;
+import com.example.pocketlibrary.ViewModel.BooksRVAdapterSearch;
 import com.example.pocketlibrary.ViewModel.UserViewModel;
 import com.example.pocketlibrary.databinding.ActivityBookBinding;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -50,12 +53,13 @@ public class Book extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_book, container, false);
         binding = ActivityBookBinding.bind(view);
-        BVM.setmBookModel(BooksRVAdapter.getModel());
         UVM.setData(AuthViewModel.giveUser());
+        BVM.setmBookModel(mBookModel);
         binding.back1.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("RestrictedApi")
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_book_to_actualNews);
+                navCo.popBackStack();
             }
         });
         db = FirebaseFirestore.getInstance();
