@@ -8,35 +8,37 @@
 
     <Button
         android:id="@+id/back_1"
-        android:onClick="clickListener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_1"
         android:drawableLeft="@drawable/ic_back" />
+
     <ImageView
         android:id="@+id/imageView_2"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:layout_centerInParent="true"
-        android:translationY="20dp"
         android:layout_below="@id/back_1"
-        android:background="@drawable/temp"/>
+        android:layout_centerInParent="true"
+        android:translationY="20dp" />
+
     <ScrollView
         android:id="@+id/des"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="250dp"
         android:layout_below="@id/imageView_2"
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_4"
         android:clickable="false"
         android:translationY="40dp">
+
         <TextView
-            android:layout_width="280dp"
-            android:translationY="20dp"
-            android:translationX="10dp"
+            android:id="@+id/text_description"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
             android:text="Описание"
             android:textColor="@color/black"
-            android:layout_height="350dp"/>
+            android:translationX="22dp"
+             />
     </ScrollView>
 
     <Button
@@ -46,8 +48,8 @@
         android:layout_below="@id/des"
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
+        android:onClick="clickListener"
         android:text="Забронировать"
         android:textColor="@color/black"
-        android:translationY="80dp"
-        android:onClick="clickListener"/>
+        android:translationY="80dp" />
 </RelativeLayout>

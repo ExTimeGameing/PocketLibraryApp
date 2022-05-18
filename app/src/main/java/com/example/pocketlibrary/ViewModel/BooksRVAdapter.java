@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pocketlibrary.Model.BookModel;
 import com.example.pocketlibrary.R;
+import com.example.pocketlibrary.View.ActualNews;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ import java.util.ArrayList;
 public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHolder> {
     private ArrayList<BookModel> bookModelArrayList;
     private Context context;
+    private BookViewModel BVM = new BookViewModel();
+    private static BookModel model;
 
     public BooksRVAdapter(ArrayList<BookModel> bookModelArrayList, Context context) {
         this.bookModelArrayList = bookModelArrayList;
@@ -41,9 +44,14 @@ public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_actualNews_to_book);
+                model = bookModel;
+                ActualNews.getBind();
             }
         });
+    }
+
+    public static BookModel getModel() {
+        return model;
     }
 
     @Override

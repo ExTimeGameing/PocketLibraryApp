@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ActualNews extends Fragment {
-    FragmentActualNewsBinding binding;
+    static FragmentActualNewsBinding binding;
     private RecyclerView newsRV;
     private ArrayList<BookModel> bookModelArrayList;
     private BooksRVAdapter booksRVAdapter;
@@ -58,9 +59,9 @@ public class ActualNews extends Fragment {
         newsRV = binding.container1;
         db = FirebaseFirestore.getInstance();
         bookModelArrayList = new ArrayList<>();
+        booksRVAdapter = new BooksRVAdapter(bookModelArrayList, this.getContext());
         newsRV.setHasFixedSize(true);
         newsRV.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
-        booksRVAdapter = new BooksRVAdapter(bookModelArrayList, this.getContext());
         newsRV.setAdapter(booksRVAdapter);
         loadrecyclervViewData();
         return binding.getRoot();
@@ -87,5 +88,9 @@ public class ActualNews extends Fragment {
                 Toast.makeText(ActualNews.newInstance().getContext(), "Fail to get data", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public static void getBind(){
+        Navigation.findNavController(binding.getRoot()).navigate(R.id.action_actualNews_to_book);
     }
 }

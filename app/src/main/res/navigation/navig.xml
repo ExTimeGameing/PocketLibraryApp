@@ -9,30 +9,43 @@
         android:id="@+id/actualNews"
         android:name="com.example.pocketlibrary.View.ActualNews"
         android:label="ActualNews" >
+
         <action
-            android:id="@+id/action_actualNews_to_book"
-            app:destination="@id/book" />
+            android:id="@+id/action_actualNews_to_booksList2"
+            app:destination="@id/booksList" />
     </fragment>
     <fragment
         android:id="@+id/booksList"
         android:name="com.example.pocketlibrary.View.BooksList"
         android:label="fragment_books_list"
-        tools:layout="@layout/fragment_books_list" />
+        tools:layout="@layout/fragment_books_list" >
+    </fragment>
     <fragment
         android:id="@+id/profile2"
         android:name="com.example.pocketlibrary.View.Profile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+
+    </fragment>
     <fragment
         android:id="@+id/search"
         android:name="com.example.pocketlibrary.View.Search"
         android:label="activity_search"
-        tools:layout="@layout/activity_search" />
+        tools:layout="@layout/activity_search" >
+
+    </fragment>
     <fragment
         android:id="@+id/book"
         android:name="com.example.pocketlibrary.View.Book"
         android:label="activity_book"
-        tools:layout="@layout/activity_book" />
+        tools:layout="@layout/activity_book" >
+        <action
+            android:id="@+id/action_book_to_actualNews"
+            app:destination="@id/actualNews" />
+        <action
+            android:id="@+id/action_book_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+    </fragment>
     <fragment
         android:id="@+id/reglament"
         android:name="com.example.pocketlibrary.View.Reglament"
