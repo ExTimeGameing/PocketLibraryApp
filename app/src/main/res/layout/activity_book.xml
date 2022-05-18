@@ -48,7 +48,6 @@
         android:layout_below="@id/des"
         android:layout_centerInParent="true"
         android:background="@drawable/rectangle_1"
-        android:onClick="clickListener"
         android:text="Забронировать"
         android:textColor="@color/black"
         android:translationY="80dp" />

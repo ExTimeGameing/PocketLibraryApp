@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_actualNews_to_booksList2"
             app:destination="@id/booksList" />
+        <action
+            android:id="@+id/action_actualNews_to_book"
+            app:destination="@id/book" />
     </fragment>
     <fragment
         android:id="@+id/booksList"
@@ -42,9 +45,6 @@
         <action
             android:id="@+id/action_book_to_actualNews"
             app:destination="@id/actualNews" />
-        <action
-            android:id="@+id/action_book_to_mapsActivity"
-            app:destination="@id/mapsActivity" />
     </fragment>
     <fragment
         android:id="@+id/reglament"
@@ -104,12 +104,12 @@
             android:id="@+id/action_signUp_to_instruction"
             app:destination="@id/instruction" />
     </fragment>
-    <activity
+    <fragment
         android:id="@+id/status"
         android:name="com.example.pocketlibrary.View.Status"
         android:label="activity_status"
         tools:layout="@layout/activity_status" />
-    <activity
+    <fragment
         android:id="@+id/mapsActivity"
         android:name="com.example.pocketlibrary.View.MapsActivity"
         android:label="activity_maps"

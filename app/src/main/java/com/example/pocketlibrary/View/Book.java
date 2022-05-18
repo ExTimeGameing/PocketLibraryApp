@@ -46,6 +46,7 @@ public class Book extends Fragment {
             @Override
             public void onClick(View view) {
                 navCo.navigate(R.id.mapsActivity);
+                MainActivity.navigation.setVisibility(View.GONE);
             }
         });
         return binding.getRoot();
