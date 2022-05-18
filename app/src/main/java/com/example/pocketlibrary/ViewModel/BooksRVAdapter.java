@@ -38,7 +38,7 @@ public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHold
         Book book = bookArrayList.get(position);
         holder.nameTV.setText(book.getName());
 
-        Picasso.with(context).load(book.getImgUri()).into(holder.imageIV); // TODO
+        Picasso.with(context).load(book.getImgUri()).into(holder.imageIV);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
