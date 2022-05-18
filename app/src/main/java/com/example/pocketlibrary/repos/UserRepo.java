@@ -5,10 +5,10 @@ import com.example.pocketlibrary.Model.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class userRepo {
+public class UserRepo {
     public List<User> userSet = new ArrayList<>();
 
-    public userRepo(){
+    public UserRepo(){
         addUser("Wizzer", "bugrov102002@yandex.ru", "1111");
     }
 

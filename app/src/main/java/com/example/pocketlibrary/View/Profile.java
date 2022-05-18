@@ -10,27 +10,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.example.pocketlibrary.R;
-import com.example.pocketlibrary.ViewModel.authViewModel;
-import com.example.pocketlibrary.ViewModel.userViewModel;
+import com.example.pocketlibrary.ViewModel.AuthViewModel;
+import com.example.pocketlibrary.ViewModel.UserViewModel;
 import com.example.pocketlibrary.databinding.FragmentProfileBinding;
 
 
-public class profile extends Fragment {
-    userViewModel model;
+public class Profile extends Fragment {
+    UserViewModel model;
     FragmentProfileBinding binding;
 
-    public profile() {
+    public Profile() {
     }
 
-    public static profile newInstance() {
-        return new profile();
+    public static Profile newInstance() {
+        return new Profile();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        model = new ViewModelProvider(this).get(userViewModel.class);
-        model.setData(authViewModel.giveUser());
+        model = new ViewModelProvider(this).get(UserViewModel.class);
+        model.setData(AuthViewModel.giveUser());
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 

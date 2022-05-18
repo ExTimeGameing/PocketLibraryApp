@@ -1,15 +1,15 @@
 package com.example.pocketlibrary.Model;
 
-public class Book {
+public class BookModel {
     private String name;
     private String author;
     private String description;
     private String imgUri;
 
-    public Book() {
+    public BookModel() {
     }
 
-    public Book(String name, String author, String description, String imgUri){
+    public BookModel(String name, String author, String description, String imgUri){
         this.author = author;
         this.name = name;
         this.description = description;

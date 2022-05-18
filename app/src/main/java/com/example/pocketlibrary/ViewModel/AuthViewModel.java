@@ -3,13 +3,13 @@ package com.example.pocketlibrary.ViewModel;
 import android.util.Log;
 import androidx.lifecycle.ViewModel;
 import com.example.pocketlibrary.Model.User;
-import com.example.pocketlibrary.repos.userRepo;
+import com.example.pocketlibrary.repos.UserRepo;
 
-public class authViewModel extends ViewModel {
-    userRepo repo = new userRepo();
+public class AuthViewModel extends ViewModel {
+    UserRepo repo = new UserRepo();
     static User nUser = new User();
 
-    public authViewModel(){}
+    public AuthViewModel(){}
 
     public boolean authentication(String name, String password){
         User mUser = repo.getUserByName(name);

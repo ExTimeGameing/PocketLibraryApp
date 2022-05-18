@@ -9,20 +9,22 @@ import android.view.ViewGroup;
 
 import com.example.pocketlibrary.R;
 
-public class book extends Fragment {
 
-    public book() {
-        // Required empty public constructor
+public class Search extends Fragment {
+    public Search(){
     }
 
-    public static book newInstance() {
-        return new book();
+    public static Search newInstance() {
+        return new Search();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_book, container, false);
+        return inflater.inflate(R.layout.activity_search, container, false);
     }
+
+
 }
+

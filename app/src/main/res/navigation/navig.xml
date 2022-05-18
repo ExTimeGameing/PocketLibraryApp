@@ -20,22 +20,22 @@
         tools:layout="@layout/fragment_books_list" />
     <fragment
         android:id="@+id/profile2"
-        android:name="com.example.pocketlibrary.View.profile"
+        android:name="com.example.pocketlibrary.View.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/search"
-        android:name="com.example.pocketlibrary.View.search"
+        android:name="com.example.pocketlibrary.View.Search"
         android:label="activity_search"
         tools:layout="@layout/activity_search" />
     <fragment
         android:id="@+id/book"
-        android:name="com.example.pocketlibrary.View.book"
+        android:name="com.example.pocketlibrary.View.Book"
         android:label="activity_book"
         tools:layout="@layout/activity_book" />
     <fragment
         android:id="@+id/reglament"
-        android:name="com.example.pocketlibrary.View.reglament"
+        android:name="com.example.pocketlibrary.View.Reglament"
         android:label="activity_reglament"
         tools:layout="@layout/activity_reglament" />
     <fragment
@@ -93,7 +93,7 @@
     </fragment>
     <activity
         android:id="@+id/status"
-        android:name="com.example.pocketlibrary.View.status"
+        android:name="com.example.pocketlibrary.View.Status"
         android:label="activity_status"
         tools:layout="@layout/activity_status" />
     <activity

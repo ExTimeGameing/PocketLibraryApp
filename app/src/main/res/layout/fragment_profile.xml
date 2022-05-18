@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.profile">
+    tools:context=".View.Profile">
     
     <ImageView
         android:id="@+id/profile_img"

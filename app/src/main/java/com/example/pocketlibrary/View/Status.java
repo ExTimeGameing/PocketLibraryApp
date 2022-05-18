@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.example.pocketlibrary.R;
 
-public class status extends AppCompatActivity {
+public class Status extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

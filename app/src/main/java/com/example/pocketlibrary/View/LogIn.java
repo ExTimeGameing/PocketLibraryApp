@@ -12,12 +12,12 @@ import android.view.ViewGroup;
 
 
 import com.example.pocketlibrary.R;
-import com.example.pocketlibrary.ViewModel.authViewModel;
+import com.example.pocketlibrary.ViewModel.AuthViewModel;
 import com.example.pocketlibrary.databinding.ActivityLogInBinding;
 
 
 public class LogIn extends Fragment {
-    private static authViewModel auth = new authViewModel();
+    private static AuthViewModel auth = new AuthViewModel();
     private static ActivityLogInBinding binding;
 
     public LogIn(){}

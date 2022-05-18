@@ -12,16 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.pocketlibrary.R;
-import com.example.pocketlibrary.ViewModel.authViewModel;
+import com.example.pocketlibrary.ViewModel.AuthViewModel;
 import com.example.pocketlibrary.databinding.ActivitySignUpBinding;
-import com.example.pocketlibrary.repos.userRepo;
-
-import java.lang.annotation.Native;
+import com.example.pocketlibrary.repos.UserRepo;
 
 public class SignUp extends Fragment {
     ActivitySignUpBinding binding;
-    userRepo repo = new userRepo();
-    authViewModel auth = new authViewModel();
+    UserRepo repo = new UserRepo();
+    AuthViewModel auth = new AuthViewModel();
     public SignUp(){}
 
     public static SignUp newInstance () {

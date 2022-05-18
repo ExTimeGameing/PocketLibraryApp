@@ -2,20 +2,16 @@ package com.example.pocketlibrary.View;
 
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import com.example.pocketlibrary.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(BooksList.newInstance());
                     return true;
                 case R.id.profile2:
-                    loadFragment(profile.newInstance());
+                    loadFragment(Profile.newInstance());
                     return true;
                 case R.id.search:
-                    loadFragment(search.newInstance());
+                    loadFragment(Search.newInstance());
                     return true;
             }
             return false;
@@ -64,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         switch (view.getId()){
             case R.id.ants_book:{
-                loadFragment(book.newInstance());
+                loadFragment(Book.newInstance());
                 break;
             }
             case R.id.buy:{
@@ -73,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.rectangle_10:{
-                loadFragment(reglament.newInstance());
+                loadFragment(Reglament.newInstance());
                 break;
             }
             case R.id.rectangle_11:{
@@ -82,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.back_2:{
-                loadFragment(profile.newInstance());
+                loadFragment(Profile.newInstance());
                 break;
             }
             case R.id.back_1:{

@@ -55,7 +55,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void mapClick(View view) {
         switch (view.getId()){
             case R.id.rectangle_12:{
-                Intent intent = new Intent(this, status.class);
+                Intent intent = new Intent(this, Status.class);
                 startActivity(intent);
                 break;
             }

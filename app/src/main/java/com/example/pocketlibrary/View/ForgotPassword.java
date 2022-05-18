@@ -13,11 +13,11 @@ import android.view.ViewGroup;
 import com.example.pocketlibrary.Model.User;
 import com.example.pocketlibrary.R;
 import com.example.pocketlibrary.databinding.ActivityForgotPasswordBinding;
-import com.example.pocketlibrary.repos.userRepo;
+import com.example.pocketlibrary.repos.UserRepo;
 
 public class ForgotPassword extends Fragment {
     ActivityForgotPasswordBinding binding;
-    userRepo repo = new userRepo();
+    UserRepo repo = new UserRepo();
 
     public ForgotPassword() {
         // Required empty public constructor

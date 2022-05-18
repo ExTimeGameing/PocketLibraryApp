@@ -6,24 +6,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.pocketlibrary.Model.Book;
+import com.example.pocketlibrary.Model.BookModel;
 import com.example.pocketlibrary.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHolder> {
-    private ArrayList<Book> bookArrayList;
+    private ArrayList<BookModel> bookModelArrayList;
     private Context context;
 
-    public BooksRVAdapter(ArrayList<Book> bookArrayList, Context context) {
-        this.bookArrayList = bookArrayList;
+    public BooksRVAdapter(ArrayList<BookModel> bookModelArrayList, Context context) {
+        this.bookModelArrayList = bookModelArrayList;
         this.context = context;
     }
 
@@ -35,10 +34,10 @@ public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Book book = bookArrayList.get(position);
-        holder.nameTV.setText(book.getName());
+        BookModel bookModel = bookModelArrayList.get(position);
+        holder.nameTV.setText(bookModel.getName());
 
-        Picasso.with(context).load(book.getImgUri()).into(holder.imageIV);
+        Picasso.with(context).load(bookModel.getImgUri()).into(holder.imageIV);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,7 +48,7 @@ public class BooksRVAdapter extends RecyclerView.Adapter<BooksRVAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return bookArrayList.size();
+        return bookModelArrayList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

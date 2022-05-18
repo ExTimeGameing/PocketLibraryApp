@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.pocketlibrary.Model.Book;
+import com.example.pocketlibrary.Model.BookModel;
 import com.example.pocketlibrary.R;
 import com.example.pocketlibrary.ViewModel.BooksRVAdapter;
 import com.example.pocketlibrary.databinding.FragmentActualNewsBinding;
@@ -30,7 +30,7 @@ import java.util.List;
 public class ActualNews extends Fragment {
     FragmentActualNewsBinding binding;
     private RecyclerView newsRV;
-    private ArrayList<Book> bookArrayList;
+    private ArrayList<BookModel> bookModelArrayList;
     private BooksRVAdapter booksRVAdapter;
     private FirebaseFirestore db;
 
@@ -57,10 +57,10 @@ public class ActualNews extends Fragment {
         });
         newsRV = binding.container1;
         db = FirebaseFirestore.getInstance();
-        bookArrayList = new ArrayList<>();
+        bookModelArrayList = new ArrayList<>();
         newsRV.setHasFixedSize(true);
         newsRV.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
-        booksRVAdapter = new BooksRVAdapter(bookArrayList, this.getContext());
+        booksRVAdapter = new BooksRVAdapter(bookModelArrayList, this.getContext());
         newsRV.setAdapter(booksRVAdapter);
         loadrecyclervViewData();
         return binding.getRoot();
@@ -73,8 +73,8 @@ public class ActualNews extends Fragment {
                 if (!queryDocumentSnapshots.isEmpty()){
                     List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
                     for (DocumentSnapshot d : list){
-                        Book book = d.toObject(Book.class);
-                        bookArrayList.add(book);
+                        BookModel bookModel = d.toObject(BookModel.class);
+                        bookModelArrayList.add(bookModel);
                     }
                     booksRVAdapter.notifyDataSetChanged();
                 } else {
